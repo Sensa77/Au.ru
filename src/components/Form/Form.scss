@@ -1,0 +1,63 @@
+.form__section {
+  position: relative;
+}
+
+.form__section:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #E5E4E4;
+}
+
+.form__label {
+  display: flex;
+  font-size: 21px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.form__select,
+.form__input {
+  display: block;
+  width: 335px;
+  height: 31px;
+  border: 1px solid #999999;
+  margin-bottom: 32px;
+  margin-right: 18px;
+}
+
+.form__select {
+  margin-left: 129px;
+}
+
+.form__input {
+  &--password {
+    margin-left: 160px;
+  }
+
+  &--password-repeat {
+    margin-left: 75px;
+  }
+
+  &--email {
+    margin-left: 45px;
+  }
+
+  &--approve {
+    margin-left: 124px;
+  }
+}
+
+[type='checkbox'] {
+  width: auto;
+}
+
+.form__description {
+  right: 40px;
+  max-width: 340px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #999999;
+}
